@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div id="app">
+  <div id="myApp">
     @{{user.username}} - {{fullName}}
     <strong>Followers:</strong>{{followers}}
     <button @click="followUser" style="background: grey; color: white; border-width: 0px;">
@@ -63,9 +63,9 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+<style lang="scss">
+@import url(./style/_reset.scss);
+#myApp {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
